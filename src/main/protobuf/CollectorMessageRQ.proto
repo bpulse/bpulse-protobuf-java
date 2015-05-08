@@ -1,0 +1,21 @@
+package collector;
+
+option java_package = "me.bpulse.domain.proto.collector";
+option optimize_for = SPEED;
+
+message Value{
+	required string name = 1;
+	repeated string values = 2;
+}
+
+message Pulse{
+	required string typeId = 1;
+	required string instanceId = 2;
+	required int64 time = 3;
+	repeated Value values = 4;
+}
+
+message PulsesRQ{
+	required string version = 1;
+	repeated Pulse pulse = 2;
+}

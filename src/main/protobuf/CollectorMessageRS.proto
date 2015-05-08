@@ -1,0 +1,16 @@
+package collector;
+
+option java_package = "me.bpulse.domain.proto.collector";
+option optimize_for = SPEED;
+
+message PulsesRS{
+
+enum StatusType {
+    OK = 0;
+    ERROR = 1;
+  }
+
+	required int64 rsTime = 1;
+	required StatusType status = 2 [default = OK];
+	optional string error = 3;
+}

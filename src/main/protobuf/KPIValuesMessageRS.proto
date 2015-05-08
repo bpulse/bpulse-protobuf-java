@@ -1,0 +1,54 @@
+package kpi;
+
+import "KPIValuesMessageRQ.proto";
+option java_package = "me.bpulse.domain.proto.kpi";
+option optimize_for = SPEED;
+
+
+message KPIValueSecond{
+	required int32 s = 1;
+	required int64 v = 2;
+}
+
+message KPIValueMinute{
+	required int32 mi = 1;
+	required int64 v = 2;
+	repeated KPIValueSecond sc = 3;
+}
+
+message KPIValueHour{
+	required int32 h = 1;
+	required int64 v = 2;
+	repeated KPIValueMinute mts = 3;
+}
+
+message KPIValueDay{
+	required int32 d = 1;
+	required int64 v = 2;
+	repeated KPIValueHour hs = 3;
+}
+
+message KPIValueMonth{
+	required int32 m = 1;
+	required int64 v = 2;
+	repeated KPIValueDay ds = 3;
+}
+
+message KPIValueYear{
+	required int32 y = 1;
+	required int64 v = 2;
+	repeated KPIValueMonth ms = 3;
+}
+
+message Values{
+	repeated KPIValueYear ys = 1;
+	repeated string grpV = 2;
+}
+
+message KPIValuesRS{
+	required string id = 1;
+	required string shortName = 2;
+	required int64 rsTime = 3;
+	repeated string groupBy = 4; 
+	repeated Values values = 5;
+}
