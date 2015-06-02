@@ -3,16 +3,23 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.bpulse</groupId>
 	<artifactId>bpulse.protobuf</artifactId>
-	<version>0.3.3-SNAPSHOT</version>
+	<version>0.3.3</version>
 	<packaging>jar</packaging>
 	<name>bpulse.protobuf</name>
 	<url>http://maven.apache.org</url>
 	
 	<properties>
-                <maven.compiler.source>1.6</maven.compiler.source>
-                <maven.compiler.target>1.6</maven.compiler.target>
+        <maven.compiler.source>1.6</maven.compiler.source>
+        <maven.compiler.target>1.6</maven.compiler.target>
 		<java-version>1.6</java-version>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	<distributionManagement>
+		<repository>
+			<id>bpulse-repository</id>
+			<url>http://innova4j.com:8080/archiva/repository/bpulse/</url>
+		</repository>
+	</distributionManagement>
 	<build>
 		<pluginManagement>
 			<plugins>
