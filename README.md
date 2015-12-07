@@ -53,7 +53,7 @@ libprotoc 2.x.x
 Once you checked out the sources, in a terminal go to the repo folder and type
 $ mvn clean install
 
-It's done, now you can build the bpulse-java-client or bpulse-sdk-java
+It's done!, now you can build the bpulse-java-client or bpulse-sdk-java
 
 # Contact us
 
