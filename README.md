@@ -30,6 +30,9 @@ $ sudo yum install libprotoc7
 If that does not work or you need a specific version of protoc installed, you cand build from source
 using the instructions of the official repository here (https://github.com/google/protobuf)
 
+http://steveloughran.blogspot.com.co/2013/09/how-to-update-ubuntu-12x-box-to-protoc.html
+https://launchpad.net/ubuntu/+source/protobuf
+
 # OSX
 The easies way is to use homebrew package manager to install the most recent version of protoc
 available here, so for example:
