@@ -78,7 +78,7 @@ And check again.
 The easies way is to use homebrew package manager to install it, please take a look at [this post](http://stackoverflow.com/questions/21775151/installing-google-protocol-buffers-on-mac)
 
 
-Compilation
+# Build
 
 Once you checked out the sources, in a terminal go to the repo folder and type
 
