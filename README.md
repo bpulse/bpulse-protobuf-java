@@ -65,3 +65,4 @@ You can reach the Developer Platform team at bpulse-devel@bpulse.me
 # License
 
 The Bpulse Protobuf Java is licensed under the Apache License 2.0. Details can be found in the LICENSE file.
+
