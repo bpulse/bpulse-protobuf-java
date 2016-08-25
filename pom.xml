@@ -14,12 +14,6 @@
 		<java-version>1.6</java-version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
-	<distributionManagement>
-		<repository>
-			<id>bpulse-repository</id>
-			<url>http://innova4j.com:8080/archiva/repository/bpulse/</url>
-		</repository>
-	</distributionManagement>
 	<build>
 		<pluginManagement>
 			<plugins>
